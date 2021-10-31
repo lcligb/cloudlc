@@ -1,4 +1,4 @@
-package com.example.constant;
+package com.example.cloudlc.constant;
 
 import com.google.common.collect.Lists;
 
