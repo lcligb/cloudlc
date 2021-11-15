@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @Component
 @ConfigurationProperties(prefix = "person")
@@ -85,5 +86,22 @@ public class Person {
 
     public void setDog(Dog dog) {
         this.dog = dog;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Person person = (Person) o;
+        return lastName.equals(person.lastName) && age.equals(person.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(lastName, age);
     }
 }

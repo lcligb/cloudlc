@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class streamTest {
+public class StreamTest {
 
     final static List<Dish> dishes = Lists.newArrayList(
             new Dish("name1", false, 800),

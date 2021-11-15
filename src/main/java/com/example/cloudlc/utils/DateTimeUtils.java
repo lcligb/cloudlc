@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 public class DateTimeUtils {
-    public LocalDateTime dateToLocalDateTime(Date date) {
+    public  LocalDateTime dateToLocalDateTime(Date date) {
         Instant instant = date.toInstant();
         return LocalDateTime.ofInstant(instant, ZoneId.systemDefault());
     }
