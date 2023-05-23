@@ -17,7 +17,7 @@
         <java.version>1.8</java.version>
         <guava.version>25.0-jre</guava.version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
-        <fastjson.version>1.2.68.noneautotype</fastjson.version>
+        <fastjson.version>1.2.4</fastjson.version>
         <common.version>1.0.0-SNAPSHOT</common.version>
         <common.collections4>4.3</common.collections4>
     </properties>
@@ -53,17 +53,17 @@
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.alibaba.ais.dc.x</groupId>
-            <artifactId>dc-x-common</artifactId>
-            <version>${common.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-log4j12</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.ais.dc.x</groupId>-->
+<!--            <artifactId>dc-x-common</artifactId>-->
+<!--            <version>${common.version}</version>-->
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.slf4j</groupId>-->
+<!--                    <artifactId>slf4j-log4j12</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-collections4</artifactId>

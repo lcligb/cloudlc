@@ -1,10 +1,12 @@
 package com.example.cloudlc.dailyTest.control;
 
-import com.alibaba.ais.dc.x.common.model.web.WebResult;
 import com.example.cloudlc.dailyTest.bean.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/config")
@@ -22,11 +24,11 @@ public class PersonAct {
 //        return "测试一下1";
         return useLocalCache;
     }
-    @GetMapping("/test")
-    public WebResult test2() {
-//        System.out.println(person);
-        return WebResult.success().withData("测试一下1");
-    }
+//    @GetMapping("/test")
+//    public WebResult test2() {
+////        System.out.println(person);
+//        return WebResult.success().withData("测试一下1");
+//    }
 
     @RequestMapping(value = "/echo/{string}", method = RequestMethod.GET)
     public String test3(@PathVariable String string) {
