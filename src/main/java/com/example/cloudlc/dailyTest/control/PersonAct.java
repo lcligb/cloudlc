@@ -20,9 +20,9 @@ public class PersonAct {
 
     @RequestMapping("/get")
     public String test1() {
-//        System.out.println(person);
-//        return "测试一下1";
-        return useLocalCache;
+        System.out.println(person);
+        return "测试一下1";
+//        return useLocalCache;
     }
 //    @GetMapping("/test")
 //    public WebResult test2() {
